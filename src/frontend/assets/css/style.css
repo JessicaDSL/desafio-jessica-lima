@@ -1,0 +1,259 @@
+*, h2, h1, h3 {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  color: #0d0d0d;
+  background-image: url('./assets/image/background.png');
+  background-size: 10rem;
+}
+
+header {
+  background-color: #51731F;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.hero-banner {
+  height: 10rem;
+  background-image: url("./assets/image/home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% 30%;
+}
+
+.hero-section {
+  background-color: #51731F;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #f2f2f2;
+  font-size: x-large;
+  letter-spacing: .01px;
+  text-align: center;
+  margin: 0 0 .8rem 0;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
+ul li.list-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+
+  width: 40%;
+  height: 180px;
+
+  margin: .5rem 0;
+  border-radius: .8rem;
+  box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, .3);
+}
+
+ul li div {
+  display: flex;
+}
+
+.product-image {
+  width: 4rem;
+  height: 4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  background-position: 50% 70%;
+}
+
+h2 {
+  font-size: .9rem;
+}
+
+.quantity{
+  border: 1px solid #F2A516;
+}
+
+.add-quantity-product {
+  width: 70%;
+  margin: .4rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bebas Neue', sans-serif;
+  align-items: start;
+}
+
+.value-quantity {
+  width: 1.3rem;
+  border: 1px solid #F2A516;
+  border-radius: 5px 0 0 5px;
+  padding: 0 0.2rem 0 0;
+  text-align: right;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#addQuantity {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: #F2A516;
+  color: #f2f2f2;
+  font-size: medium;
+  font-weight: 700;
+  width: 1.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-total-value {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: large;
+  color: #0d0d0d;
+}
+
+.product-total-value span {
+  font-size: smaller;
+}
+
+.add-product-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2f2f2;
+  background-color: #F2A516;
+  width: 70%;
+  padding: .5rem 0;
+  border-radius: 5px;
+}
+
+/* carrinho */
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-list-item {
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 0 .2rem 0;
+  width: 90%;
+  border-bottom: 0.5px solid rgba(0, 0, 0, .1);
+}
+
+.name-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-product span {
+  font-size: x-small;
+  margin: 0 0 .5rem 0;
+}
+
+.add-quantity-product-cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width: 62%;
+  justify-content: center;
+}
+
+.product-info h2 {
+  font-size: large;
+}
+
+#payment {
+  width: 90%;
+  padding: .8rem .8rem;
+  color: #f2f2f2;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: medium;
+  border: none;
+  background-color: #F2A516;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.button-payment {
+  padding: 0.05rem 1.5rem;
+  background: #51731F;
+  color: #f2f2f2;
+  margin: 0 0 2rem 0;
+  border-radius: 8px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: x-large;
+}
+
+.total {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin:  0 0 1rem;
+}
+
+.total h2 {
+  margin: 0 1rem 0 0;
+}
+
+.completed-banner svg {
+  font-size: 6rem;
+  fill: #f2f2f2;
+}
+
+.completed-banner {
+  background-color: #F2A516;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.text-confirm-payment {
+  background-color: #51731F;
+  color: #f2f2f2;
+  padding: .5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.text-confirm-payment p {
+  width: 80%;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
