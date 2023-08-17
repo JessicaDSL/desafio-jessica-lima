@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="./index.html" class="completed-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    </a>
+
+    <div class="hero-section">
+      <p>CARRINHO</p>
+    </div>
+
+    <div class="cart">
+      <ul class="cart-list"></ul>
+    </div>
+
+    <select name="payment" id="payment">
+      <option>Selecione a forma de pagamento</option>
+      <option value="money">Dinheiro</option>
+      <option value="debit">Débito</option>
+      <option value="credit">Crédito</option>
+    </select>
+
+    <div class="total">
+      <h2>Total:</h2>
+      <h3 class="product-total-value"><span>R$</span>0,00</h3>
+    </div>
+
+    <a href="./completed-payment.html" class="button-payment">ENVIAR</a>
+
+    <script src="https://kit.fontawesome.com/c140946e13.js" crossorigin="anonymous"></script>
+    <script type="module" src="./assets/js/cart.js"></script>
+    
+  </body>
+</html>
