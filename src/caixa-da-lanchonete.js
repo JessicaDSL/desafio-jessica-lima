@@ -10,13 +10,22 @@ const cardapio = {
 };
 
 class CaixaDaLanchonete {
+  constructor(cardapio) {
+    this.cardapio = cardapio;
+
+    this.formasDePagamento = {
+      dinheiro: 0.95,
+      credito: 1.03,
+      debito: 1.0,
+    };
+  }
+
   calcularValorDaCompra(metodoDePagamento, itens) {
     return "";
   }
 }
 
 export { CaixaDaLanchonete };
-
 
 const caixa = new CaixaDaLanchonete(cardapio);
 
