@@ -1,3 +1,48 @@
+# Oie, tudo bem aí?
+
+Então deixa eu editar um pouco aqui o README rapidinho,
+Bem vindos ao meu programa de automatização de pedidos, desenvolvido para um desafio de oportunidade de estágio.
+
+## O que é esse projeto?
+
+Esse aplicativo simula uma ida a uma lanchonete e não ter que ficar esperando na fila pelo atendimento, 
+você chega na fila, entra no site, e recebe uma senha, só aguardar.
+
+## Como rodar o projeto?
+
+Boa pergunta.. Mentira, calmae:
+
+Primeiro você vai precisar instalar as dependencias:
+
+```npm install body-parser cors express pg toastify-js```
+
+Além disso, o banco de dados precisa ser inicializado:
+
+```node server.js```
+
+E aí pra você ter certeza que tá tudo funcionando, tem a parte dos testes?
+
+```npm run test```
+
+##E ai é só isso que tá aí?
+
+Nada, quero colocar a API dele pra rodar no Heroku e o site no Netlify, mas não deu tempo, quem sabe em um futuro próximo?
+
+##Pelo menos o desing tá pronto?
+
+Também não deu tempo de completar a responsividade, mas eu irei, por enquanto somente funciona para celulares.
+
+#Agradecimentos
+
+Agradeço pela oportunidade, o projeto me deu oportunidade de treinar o figma para a criação do layout do site,
+aqui as imagens do figma:
+
+E também pude exercitar o uso do banco de dados e o postgresql que são tecnologias que já estou em treinamento, pude aprimorar o conhecimento, obrigada <3
+
+Agora que roubei seu tempo, pode seguir pro antigo README:
+
+
+
 # CAIXA DA LANCHONETE
 
 ## COMO BAIXAR O CÓDIGO E SUBMETER MINHA SOLUÇÃO?
