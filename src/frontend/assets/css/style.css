@@ -12,21 +12,39 @@ body {
   align-items: center;
   font-family: 'Quicksand', sans-serif;
   color: #0d0d0d;
-  background-image: url('./assets/image/background.png');
+  background-image: url('../images/background.png');
   background-size: 10rem;
 }
 
-header {
+.header {
   background-color: #51731F;
-  height: 1.5rem;
+  height: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 1rem;
+  width: 100%;
 }
 
-.hero-banner {
+.header a {
+  background-color: #F2A516;
+  padding: 0 1rem;
+  border-radius: 5px;
+}
+
+.header a:hover {
+  background-color: #bc7d09;
+}
+
+.header svg {
+  fill: #f2f2f2;
+  margin: .3rem 0 0 0;
+}
+
+.hero-banner-home {
   height: 10rem;
-  background-image: url("./assets/image/home.png");
+  width: 100%;
+  background-image: url("../images/home.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 40% 30%;
@@ -73,6 +91,10 @@ ul li.list-product {
 
 ul li div {
   display: flex;
+}
+
+#listProducts {
+  margin: 0 0 2rem 0;
 }
 
 .product-image {
@@ -146,6 +168,28 @@ h2 {
 }
 
 /* carrinho */
+
+.hero-banner-cart {
+  height: 5rem;
+  width: 100%;
+  background-image: url("../images/cart.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% 30%;
+}
+
+.hero-banner-cart a {
+  background-color: #F2A516;
+  fill: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  width: 2.3rem;
+  height: 2.3rem;
+  font-size: larger;
+  margin: .5rem 0 0 1rem;
+}
 
 .cart-list {
   display: flex;
@@ -256,4 +300,14 @@ h2 {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
+}
+
+/**/
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
