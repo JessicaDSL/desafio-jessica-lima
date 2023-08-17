@@ -21,6 +21,23 @@ class CaixaDaLanchonete {
   }
 
   calcularValorDaCompra(metodoDePagamento, itens) {
+    const valores = itens.map((item) => {
+      const [codigo, quantidade] = item.split(",");
+      const valorItem = cardapio[codigo];
+
+      if (!valorItem) {
+        return "Item inválido!";
+      }
+
+      if (quantidade <= 0) {
+        return "Quantidade inválida!";
+      }
+
+      return valorItem * quantidade;
+    });
+
+    console.log(valores);
+
     return "";
   }
 }
