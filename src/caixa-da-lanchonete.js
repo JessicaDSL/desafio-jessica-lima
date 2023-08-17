@@ -20,6 +20,18 @@ class CaixaDaLanchonete {
     };
   }
 
+  transformDotsToComma(value) {
+    return value.replace(/\./g, ",");
+  }
+
+  formatValue(value) {
+    if (Math.floor(value) === value) {
+      return this.transformDotsToComma(value.toFixed(2));
+    } else {
+      return this.transformDotsToComma(value.toFixed(2));
+    }
+  }
+
   calcularValorDaCompra(metodoDePagamento, itens) {
     const valores = itens.map((item) => {
       const [codigo, quantidade] = item.split(",");
@@ -65,8 +77,7 @@ class CaixaDaLanchonete {
       valorTotal *= this.formasDePagamento.debito;
     }
 
-    console.log(valorTotal);
-    return "";
+    return `R$ ${this.formatValue(valorTotal)}`;
   }
 }
 
