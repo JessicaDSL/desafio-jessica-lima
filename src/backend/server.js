@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import pkg from "pg";
+import { senha } from "../utils";
 const { Pool } = pkg;
 
 const app = express();
@@ -13,7 +14,7 @@ const pool = new Pool({
   user: "postgres",
   host: "localhost",
   database: "postgres",
-  password: "05zuzbca79",
+  password: senha,
   port: 5432,
 });
 
