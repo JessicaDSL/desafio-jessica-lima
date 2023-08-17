@@ -36,7 +36,21 @@ class CaixaDaLanchonete {
       return valorItem * quantidade;
     });
 
-    console.log(valores);
+    if (valores.includes("Item inválido!")) {
+        return "Item inválido!";
+    }
+  
+    if (itens.length === 0) {
+        return "Não há itens no carrinho de compra!";
+    }
+  
+    if (itens.length === 1 && (itens[0].startsWith('chantily') || itens[0].startsWith('queijo'))) {
+        return "Item extra não pode ser pedido sem o principal";
+    }
+  
+    if (metodoDePagamento && !this.formasDePagamento[metodoDePagamento]) {
+        return "Forma de pagamento inválida!";
+    }
 
     return "";
   }
