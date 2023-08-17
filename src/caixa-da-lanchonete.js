@@ -16,3 +16,9 @@ class CaixaDaLanchonete {
 }
 
 export { CaixaDaLanchonete };
+
+
+const caixa = new CaixaDaLanchonete(cardapio);
+
+const valorTotal = caixa.calcularValorDaCompra("dinheiro", ["cafe, 1"]);
+console.log(valorTotal);
