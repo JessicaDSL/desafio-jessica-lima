@@ -57,6 +57,14 @@ class CaixaDaLanchonete {
 
     let valorTotal = valores.reduce((total, valor) => total + valor, 0);
 
+    if (metodoDePagamento === "dinheiro") {
+      valorTotal *= this.formasDePagamento.dinheiro;
+    } else if (metodoDePagamento === "credito") {
+      valorTotal *= this.formasDePagamento.credito;
+    } else {
+      valorTotal *= this.formasDePagamento.debito;
+    }
+
     console.log(valorTotal);
     return "";
   }
