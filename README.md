@@ -24,15 +24,15 @@ E aí pra você ter certeza que tá tudo funcionando, tem a parte dos testes?
 
 ```npm run test```
 
-##E ai é só isso que tá aí?
+## E ai é só isso que tá aí?
 
 Nada, quero colocar a API dele pra rodar no Heroku e o site no Netlify, mas não deu tempo, quem sabe em um futuro próximo?
 
-##Pelo menos o desing tá pronto?
+## Pelo menos o desing tá pronto?
 
 Também não deu tempo de completar a responsividade, mas eu irei, por enquanto somente funciona para celulares.
 
-#Agradecimentos
+# Agradecimentos
 
 Agradeço pela oportunidade, o projeto me deu oportunidade de treinar o figma para a criação do layout do site,
 aqui as imagens do figma:
